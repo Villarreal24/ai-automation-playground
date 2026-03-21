@@ -58,24 +58,6 @@ src/
 └── types/            # TypeScript type definitions
 ```
 
-<details>
-<summary><b>🇲🇽 Leer en Español: Estructura del Proyecto</b></summary>
-```text
-src/
-├── app/              # Rutas de la aplicación y API (Route Handlers)
-│   ├── api/chat/     # Endpoint principal de comunicación con n8n
-│   └── page.tsx      # Interfaz principal (Chat + Workflow viewer)
-├── components/       # Componentes modulares de UI
-│   ├── chat/         # Componentes de la interfaz de chat (mensajes, inputs)
-│   ├── workflow/     # Visualización de los pasos del flujo (StepTimeline)
-│   └── ui/           # Componentes base (Button, Badge, Card)
-├── data/             # Definiciones de escenarios y datos estáticos
-├── hooks/            # Hooks personalizados (useChat para lógica de mensajes)
-├── lib/              # Utilidades y cliente de API
-└── types/            # Definiciones de tipos TypeScript
-```
-</details>
-
 ## 🔌 API
 
 The application includes a secure proxy to handle communication with n8n:
