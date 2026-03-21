@@ -3,7 +3,7 @@
 An interactive platform to experiment with AI-powered automations, connected directly to an **n8n** backend.
 
 <details>
-<summary><b>🇪🇸 Leer en Español</b></summary>
+<summary><b>🇲🇽 Leer en Español</b></summary>
 Una plataforma interactiva para experimentar con automatizaciones impulsadas por Inteligencia Artificial, conectada directamente a un backend de **n8n**.
 </details>
 
@@ -16,7 +16,7 @@ Una plataforma interactiva para experimentar con automatizaciones impulsadas por
 The application uses an **n8n** backend to process business logic, extract workflow steps, and generate intelligent responses, which are displayed in the client with an enhanced "typewriter" effect for a premium user experience.
 
 <details>
-<summary><b>🇪🇸 Leer en Español</b></summary>
+<summary><b>🇲🇽 Leer en Español</b></summary>
 **AI Automation Playground** es una aplicación diseñada para demostrar el poder de la IA en flujos de trabajo del mundo real. A través de una interfaz de chat moderna y fluida, los usuarios pueden interactuar con diferentes escenarios preconfigurados (Soporte Médico, Atención al Cliente, Bienes Raíces, etc.). 
 
 La aplicación utiliza un backend de **n8n** para procesar la lógica de negocio, extraer pasos de flujo de trabajo y generar respuestas inteligentes, las cuales se muestran en el cliente con un efecto de "typewriter" mejorado para una experiencia de usuario premium.
@@ -32,7 +32,7 @@ La aplicación utiliza un backend de **n8n** para procesar la lógica de negocio
 - **Backend/Orchestration**: [n8n](https://n8n.io/) (Webhook-based logic)
 
 <details>
-<summary><b>🇪🇸 Leer en Español: Tecnologías Utilizadas</b></summary>
+<summary><b>🇲🇽 Leer en Español: Tecnologías Utilizadas</b></summary>
 - **Frontend**: [Next.js 16+](https://nextjs.org/) (App Router), [React 19](https://react.dev/)
 - **Lenguaje**: [TypeScript](https://www.typescriptlang.org/)
 - **Estilos**: [Tailwind CSS 4](https://tailwindcss.com/)
@@ -59,7 +59,7 @@ src/
 ```
 
 <details>
-<summary><b>🇪🇸 Leer en Español: Estructura del Proyecto</b></summary>
+<summary><b>🇲🇽 Leer en Español: Estructura del Proyecto</b></summary>
 ```text
 src/
 ├── app/              # Rutas de la aplicación y API (Route Handlers)
@@ -99,7 +99,7 @@ This endpoint acts as a bridge between the client and the n8n webhook.
   4. Returns plain text to the client for display.
 
 <details>
-<summary><b>🇪🇸 Leer en Español: API</b></summary>
+<summary><b>🇲🇽 Leer en Español: API</b></summary>
 La aplicación incluye un proxy seguro para manejar la comunicación con n8n:
 
 ### `POST /api/chat`
@@ -139,7 +139,7 @@ Este endpoint actúa como puente entre el cliente y el webhook de n8n.
     ```
 
 <details>
-<summary><b>🇪🇸 Leer en Español: Configuración Local</b></summary>
+<summary><b>🇲🇽 Leer en Español: Configuración Local</b></summary>
 1.  **Clonar el repositorio**.
 2.  **Instalar dependencias**:
     ```bash
@@ -163,7 +163,7 @@ Este endpoint actúa como puente entre el cliente y el webhook de n8n.
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 <details>
-<summary><b>🇪🇸 Leer en Español</b></summary>
+<summary><b>🇲🇽 Leer en Español</b></summary>
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 </details>
 
