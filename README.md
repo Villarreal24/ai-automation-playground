@@ -120,24 +120,6 @@ Este endpoint actúa como puente entre el cliente y el webhook de n8n.
     bun dev
     ```
 
-<details>
-<summary><b>🇲🇽 Leer en Español: Configuración Local</b></summary>
-1.  **Clonar el repositorio**.
-2.  **Instalar dependencias**:
-    ```bash
-    bun install
-    ```
-3.  **Configurar variables de entorno**:
-    Crea un archivo `.env.local` con:
-    ```env
-    N8N_WEBHOOK_URL=tu_webhook_aqui
-    ```
-4.  **Ejecutar el servidor de desarrollo**:
-    ```bash
-    bun dev
-    ```
-</details>
-
 ---
 
 ## 📄 License
