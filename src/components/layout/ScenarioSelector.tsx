@@ -18,7 +18,7 @@ export function ScenarioSelector({ activeScenarioId, onScenarioChange }: Scenari
             key={scenario.id}
             onClick={() => onScenarioChange(scenario.id)}
             className={cn(
-              'flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 whitespace-nowrap',
+              'flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 whitespace-nowrap cursor-pointer',
               isActive 
                 ? 'bg-white text-indigo-700 shadow-sm border border-slate-200/50' 
                 : 'text-slate-500 hover:text-slate-700 hover:bg-slate-200/50'

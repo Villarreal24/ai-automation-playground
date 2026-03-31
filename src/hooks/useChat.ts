@@ -15,7 +15,8 @@ function getOrCreateSessionId(scenarioId: string): string {
 
 export function useChat(
   activeScenarioId: string,
-  setWorkflowSteps: Dispatch<SetStateAction<WorkflowStep[]>>
+  simulateWorkflow: (scenarioId: string) => void,
+  clearSimulation: () => void
 ) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
@@ -34,8 +35,8 @@ export function useChat(
     ]);
     setInputValue('');
     setIsTyping(false);
-    setWorkflowSteps([]);
-  }, [activeScenarioId, setWorkflowSteps]);
+    clearSimulation();
+  }, [activeScenarioId, clearSimulation]);
 
   // Automatically reset the chat whenever the scenario changes
   useEffect(() => {
@@ -51,7 +52,7 @@ export function useChat(
     setMessages(prev => [...prev, userMsg]);
     setInputValue('');
     setIsTyping(true);
-    setWorkflowSteps([]);
+    simulateWorkflow(activeScenarioId);
 
     // Create an empty agent message that we'll fill via streaming
     const agentMsgId = (Date.now() + 1).toString();
@@ -87,7 +88,7 @@ export function useChat(
     );
 
     setIsTyping(false);
-  }, [inputValue, isTyping, activeScenarioId, setWorkflowSteps]);
+  }, [inputValue, isTyping, activeScenarioId, simulateWorkflow]);
 
   return {
     messages,
